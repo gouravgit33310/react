@@ -25,13 +25,15 @@ const Popular = () => {
         <div className="product-container">
         {data.map((dataid)=>
         
-        <div className="product-card">
+        <div className="product-card" >
             <p>{dataid.title}</p>
             <div className="price"><span>Price : </span>{dataid.price} </div>
             <div className="img-holder">
                 <img src={dataid.image}/>
             </div>
-            
+            <div className="add-to-cart">
+              <button >Add To Cart</button>
+            </div>
         </div>
         
         )}

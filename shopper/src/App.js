@@ -11,6 +11,7 @@ import { AppContext } from './context';
 // import { useContext } from 'react';
 import { useGlobalcontext } from './context';
 import Displayproduct from './Dispalyproduct';
+import PasswordGenerator from './PasswordGenerator';
 
 
 function App() {
@@ -20,7 +21,6 @@ function App() {
      
       <BrowserRouter>
         <Navbar />
-        <Displayproduct/>
         <Routes>
           <Route path='/' element={<Banner />}></Route>
           <Route path='/product' element={<Product />}></Route>
